@@ -8,23 +8,12 @@ import {
   MainPcChild2,
   Banner,
   Banner1,
-  BgImgIcon,
   AllevierLossPrevention,
   TrustYourPeople,
   TryFreeTrial,
   TryFreeTrialChild,
   TryFreeTrial1,
-  ViewDemo,
-  ViewDemoChild,
-  PlayIcon,
-  ViewDemo1,
-  Gnb,
   LogoIcon,
-  GnbMenu,
-  HowItWorks,
-  AboutUs,
-  Contact,
-  Contact1,
   AnimationIcon,
   ProblemsWeSolve,
   Div1,
@@ -103,36 +92,20 @@ import {
   Top2,
   TopChild,
   Top1,
-  Problems,
   ReviewByParent1,
   StarIcon,
-  WhyAllevier,
   Div,
   EllipseDiv,
   Line,
-  GnbWrapper,
 } from "./styles";
+import Header from "./components/Header";
+import Section1 from "./components/Section1";
 
 const MainPC: NextPage = () => {
   return (
     <MainPcRoot>
       {/* 상단 메뉴바 */}
-      <Gnb>
-        <GnbWrapper>
-          <LogoIcon alt="" src="/logo.svg" width={"180px"} height={"49px"} />
-          <GnbMenu>
-            <Problems>Problems</Problems>
-            <WhyAllevier>Why Allevier</WhyAllevier>
-            <HowItWorks>How it works</HowItWorks>
-            <AboutUs>About Us</AboutUs>
-            <Contact>
-              <TryFreeTrialChild>
-                <Contact1>Contact</Contact1>
-              </TryFreeTrialChild>
-            </Contact>
-          </GnbMenu>
-        </GnbWrapper>
-      </Gnb>
+      <Header />
       {/* 그라데이션 */}
       <MainPcChild />
       <MainPcItem />
@@ -140,24 +113,8 @@ const MainPC: NextPage = () => {
       <EllipseDiv />
       <MainPcChild1 />
       <MainPcChild2 />
-      {/* Section 1 */}
-      <Banner>
-        <Banner1>
-          <LogoIcon alt="" src="/logo.svg" width={"368px"} />
-          <AllevierLossPrevention>
-            {`Peace of Mind\nfor CEOs`}
-          </AllevierLossPrevention>
-          <TrustYourPeople>
-            Trusts your employees and reduces issues in the workplace.
-          </TrustYourPeople>
-          <TryFreeTrial>
-            <TryFreeTrialChild>
-              <TryFreeTrial1>Try free trial</TryFreeTrial1>
-            </TryFreeTrialChild>
-          </TryFreeTrial>
-        </Banner1>
-        <AnimationIcon alt="" src="/animation.svg" />
-      </Banner>
+      {/* Sections stuff */}
+      <Section1 />
 
       <Div>
         <ProblemsWeSolve>Problems We Solve</ProblemsWeSolve>

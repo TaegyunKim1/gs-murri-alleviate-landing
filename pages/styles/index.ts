@@ -68,38 +68,7 @@ export const BgImgIcon = styled.img`
   height: 259px;
   overflow: hidden;
 `;
-export const AllevierLossPrevention = styled.b`
-  margin-top: 32px;
-  font-size: 70px;
-  background-color: red;
-`;
-export const TrustYourPeople = styled.div`
-  margin-top: 16px;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 500;
-  background-color: yellow;
-`;
-export const TryFreeTrialChild = styled.div`
-  height: 68px;
-  border-radius: 10px;
-  background-color: #33cc99;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-export const TryFreeTrial1 = styled.div`
-  line-height: 16px;
-  font-weight: 500;
-  font-size: 24px;
-`;
-export const TryFreeTrial = styled.div`
-  margin-top: 66px;
-  width: 260px;
-  height: 68px;
-  text-align: center;
-  color: #f8f8fa;
-`;
+
 export const ViewDemoChild = styled.div`
   position: absolute;
   height: 100%;
@@ -136,66 +105,7 @@ export const ViewDemo = styled.div`
   width: 189px;
   height: 40px;
 `;
-export const Banner1 = styled.div`
-  width: 650px;
-  height: 100%;
-  background-color: gray;
-  display: flex;
-  flex-direction: column;
-`;
-export const LogoIcon = styled.img`
-  background-color: blue;
-`;
-export const Problems = styled.div`
-  font-size: 18px;
-  font-weight: 500;
-`;
-export const WhyAllevier = styled.div`
-  font-weight: 500;
-`;
-export const HowItWorks = styled.div`
-  font-weight: 500;
-`;
-export const AboutUs = styled.div`
-  font-weight: 500;
-`;
-export const GnbMenu = styled.div`
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
 
-  align-items: center;
-`;
-export const Contact1 = styled.div`
-  line-height: 16px;
-  font-weight: 500;
-`;
-export const Contact = styled.div`
-  width: 122px;
-  height: 40px;
-  text-align: center;
-  color: #f8f8fa;
-`;
-
-export const Gnb = styled.div`
-  width: 100%;
-  height: 134px;
-  color: #a6a6a6;
-  display: flex;
-  justify-content: center;
-`;
-
-export const GnbWrapper = styled.div`
-  width: 100%;
-  height: 100%;
-  max-width: 1200px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
-export const AnimationIcon = styled.img`
-  width: 539px;
-  height: 539px;
-`;
 export const ProblemsWeSolve = styled.b`
   position: absolute;
   top: 100px;
@@ -256,13 +166,7 @@ export const Div = styled.div`
   height: 873px;
   font-size: 20px;
 `;
-export const Banner = styled.div`
-  margin-top: 52px;
-  background-color: blue;
-  width: 1200px;
-  height: 539px;
-  display: flex;
-`;
+
 export const SaveYourTimeContainer1 = styled.span`
   line-break: anywhere;
   width: 100%;
