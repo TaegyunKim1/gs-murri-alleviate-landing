@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
 export const Gnb = styled.div`
-  z-index: 9999;
   width: 100%;
   height: 134px;
-  color: #a6a6a6;
+  color: #ffffff;
   display: flex;
   justify-content: center;
+  background-color: #000000;
+
+  @media ${(props) => props.theme.size.mobile} {
+    height: 63px;
+  }
 `;
 
 export const GnbWrapper = styled.div`
@@ -16,10 +20,19 @@ export const GnbWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media ${(props) => props.theme.size.mobile} {
+    margin: 0px 15px 0px 15px;
+  }
 `;
 
 export const LogoIcon = styled.img`
   cursor: pointer;
+  height: 49px;
+
+  @media ${(props) => props.theme.size.mobile} {
+    height: 33px;
+  }
 `;
 
 export const GnbMenu = styled.div`
@@ -27,6 +40,10 @@ export const GnbMenu = styled.div`
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
   text-align: center;
+
+  @media ${(props) => props.theme.size.mobile} {
+    display: none;
+  }
 `;
 
 export const Problems = styled.div`
@@ -56,7 +73,7 @@ export const Contact = styled.div`
   width: 122px;
   height: 40px;
   text-align: center;
-  color: #f8f8fa;
+  color: #000000;
 `;
 
 export const TryFreeTrialChild = styled.div`
@@ -71,4 +88,14 @@ export const TryFreeTrialChild = styled.div`
 export const Contact1 = styled.div`
   line-height: 16px;
   font-weight: 500;
+`;
+
+export const MobileMenu = styled.img`
+  @media ${(props) => props.theme.size.mobile} {
+    display: block;
+    height: 18px;
+  }
+
+  display: none;
+  cursor: pointer;
 `;

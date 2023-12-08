@@ -8,6 +8,7 @@ import {
   GnbWrapper,
   HowItWorks,
   LogoIcon,
+  MobileMenu,
   Problems,
   TryFreeTrialChild,
   WhyAllevier,
@@ -20,7 +21,7 @@ function Header() {
   return (
     <Gnb>
       <GnbWrapper>
-        <LogoIcon alt="" src="/logo.svg" width={"180px"} height={"49px"} />
+        <LogoIcon alt="" src="/white-logo.svg" />
         <GnbMenu>
           <Problems>Problems</Problems>
           <WhyAllevier>Why Allevier</WhyAllevier>
@@ -32,6 +33,7 @@ function Header() {
             </TryFreeTrialChild>
           </Contact>
         </GnbMenu>
+        <MobileMenu src="/hamburger-menu.svg" />
       </GnbWrapper>
     </Gnb>
   );

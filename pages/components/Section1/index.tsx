@@ -9,13 +9,17 @@ import {
   TryFreeTrialChild,
   TryFreeTrial1,
   AnimationIcon,
+  AnimationStuff,
+  AiBackgroundText,
+  Circle,
+  CircleItem,
 } from "./styles";
 
 function Section1() {
   return (
     <Banner>
       <Banner1>
-        <LogoIcon alt="" src="/logo.svg" width={"368px"} />
+        <LogoIcon alt="" src="/logo.svg" />
         <AllevierLossPrevention>
           {`Peace of Mind\nfor CEOs`}
         </AllevierLossPrevention>
@@ -28,7 +32,12 @@ function Section1() {
           </TryFreeTrialChild>
         </TryFreeTrial>
       </Banner1>
-      <AnimationIcon alt="" src="/animation.svg" />
+      <AnimationStuff>
+        <AiBackgroundText alt="" src="/ai-text.svg" />
+        <Circle alt="" src="/circle.svg" />
+        {/* circle-item1.svg */}
+        <CircleItem alt="" src="/circle-item1.svg" />
+      </AnimationStuff>
     </Banner>
   );
 }

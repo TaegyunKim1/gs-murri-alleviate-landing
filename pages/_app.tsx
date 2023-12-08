@@ -2,6 +2,8 @@ import { Fragment } from "react";
 import Head from "next/head";
 import type { AppProps } from "next/app";
 import GlobalStyles from "./styles/global";
+import { ThemeProvider } from "styled-components";
+import theme from "./styles/theme";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -20,7 +22,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
       </Head>
       <GlobalStyles />
-      <Component {...pageProps} />
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </Fragment>
   );
 }

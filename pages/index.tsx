@@ -6,22 +6,10 @@ import {
   MainPcInner,
   MainPcChild1,
   MainPcChild2,
-  Banner,
-  Banner1,
-  AllevierLossPrevention,
-  TrustYourPeople,
-  TryFreeTrial,
-  TryFreeTrialChild,
-  TryFreeTrial1,
-  LogoIcon,
-  AnimationIcon,
   ProblemsWeSolve,
   Div1,
-  RetailersSayOrganizedContainer,
   RetailersSayOrganized,
-  RetailersWhoBlame,
   ImgIcon,
-  Div2,
   Div3,
   SaveYourTimeContainer,
   SaveYourTimeContainer1,
@@ -97,6 +85,8 @@ import {
   Div,
   EllipseDiv,
   Line,
+  SpiralIcon,
+  Wrap,
 } from "./styles";
 import Header from "./components/Header";
 import Section1 from "./components/Section1";
@@ -107,19 +97,23 @@ const MainPC: NextPage = () => {
       {/* 상단 메뉴바 */}
       <Header />
       {/* 그라데이션 */}
-      <MainPcChild />
+      {/* <MainPcChild />
       <MainPcItem />
       <MainPcInner />
       <EllipseDiv />
       <MainPcChild1 />
-      <MainPcChild2 />
+      <MainPcChild2 /> */}
       {/* Sections stuff */}
       <Section1 />
 
       <Div>
-        <ProblemsWeSolve>Problems We Solve</ProblemsWeSolve>
+        <Wrap>
+          <SpiralIcon alt="" src="/small-spiral.svg" />
+          <ProblemsWeSolve>Problems We Solve</ProblemsWeSolve>
+        </Wrap>
+
         <Div1>
-          <RetailersSayOrganizedContainer>
+          {/* <RetailersSayOrganizedContainer>
             <RetailersSayOrganized>
               Retailers say organized theft is biting into profits,
             </RetailersSayOrganized>
@@ -134,10 +128,11 @@ const MainPC: NextPage = () => {
             retailers are facing other issues they can better control, including
             theft by their own employees, that are contributing to losses,
             according to two sources who advise major retailers.
-          </RetailersWhoBlame>
+          </RetailersWhoBlame> */}
           <ImgIcon alt="" src="/img@2x.png" />
         </Div1>
-        <Div2>
+
+        {/* <Div2>
           <RetailersSayOrganizedContainer>
             <RetailersSayOrganized>
               Locked cases aren’t the answer to retail theft
@@ -156,7 +151,7 @@ const MainPC: NextPage = () => {
             barrier.
           </RetailersWhoBlame>
           <ImgIcon alt="" src="/img1@2x.png" />
-        </Div2>
+        </Div2> */}
       </Div>
 
       <Div3>

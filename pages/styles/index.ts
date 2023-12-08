@@ -106,15 +106,6 @@ export const ViewDemo = styled.div`
   height: 40px;
 `;
 
-export const ProblemsWeSolve = styled.b`
-  position: absolute;
-  top: 100px;
-  left: 360px;
-  font-size: 48px;
-  line-height: 55px;
-  display: inline-block;
-  width: 1200px;
-`;
 export const RetailersSayOrganized = styled.p`
   margin: 0;
 `;
@@ -137,20 +128,15 @@ export const RetailersWhoBlame = styled.div`
   width: 580px;
 `;
 export const ImgIcon = styled.img`
-  position: absolute;
-  top: 0px;
-  left: 0px;
   width: 580px;
   height: 250px;
   object-fit: cover;
 `;
 export const Div1 = styled.div`
-  position: absolute;
-  top: 215px;
-  left: 360px;
   width: 580px;
   height: 480px;
 `;
+
 export const Div2 = styled.div`
   position: absolute;
   top: 215px;
@@ -159,12 +145,27 @@ export const Div2 = styled.div`
   height: 558px;
 `;
 export const Div = styled.div`
-  position: absolute;
-  top: 853px;
-  left: 0px;
-  width: 1920px;
-  height: 873px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 240px;
+  max-width: 1200px;
+  width: 100%;
   font-size: 20px;
+`;
+
+export const Wrap = styled.div``;
+
+export const SpiralIcon = styled.img`
+  position: absolute;
+  left: 0px;
+  top: 0px;
+`;
+
+export const ProblemsWeSolve = styled.b`
+  z-index: 9999;
+  margin-left: 28px;
+  font-size: 48px;
 `;
 
 export const SaveYourTimeContainer1 = styled.span`
@@ -764,13 +765,12 @@ export const Div22 = styled.div`
 `;
 export const MainPcRoot = styled.div`
   position: relative;
-  background-color: #fff;
   width: 100%;
   text-align: left;
   font-size: 16px;
-  color: #000;
   font-family: Inter;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #000;
 `;
