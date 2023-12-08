@@ -1,15 +1,6 @@
 import type { NextPage } from "next";
 import {
   MainPcRoot,
-  MainPcChild,
-  MainPcItem,
-  MainPcInner,
-  MainPcChild1,
-  MainPcChild2,
-  ProblemsWeSolve,
-  Div1,
-  RetailersSayOrganized,
-  ImgIcon,
   Div3,
   SaveYourTimeContainer,
   SaveYourTimeContainer1,
@@ -82,14 +73,12 @@ import {
   Top1,
   ReviewByParent1,
   StarIcon,
-  Div,
-  EllipseDiv,
   Line,
-  SpiralIcon,
-  Wrap,
+  MainText,
 } from "./styles";
 import Header from "./components/Header";
 import Section1 from "./components/Section1";
+import Section2 from "./components/Section2";
 
 const MainPC: NextPage = () => {
   return (
@@ -105,62 +94,13 @@ const MainPC: NextPage = () => {
       <MainPcChild2 /> */}
       {/* Sections stuff */}
       <Section1 />
-
-      <Div>
-        <Wrap>
-          <SpiralIcon alt="" src="/small-spiral.svg" />
-          <ProblemsWeSolve>Problems We Solve</ProblemsWeSolve>
-        </Wrap>
-
-        <Div1>
-          {/* <RetailersSayOrganizedContainer>
-            <RetailersSayOrganized>
-              Retailers say organized theft is biting into profits,
-            </RetailersSayOrganized>
-            <RetailersSayOrganized>
-              but internal issues may really be to blame
-            </RetailersSayOrganized>
-          </RetailersSayOrganizedContainer>
-          <RetailersWhoBlame>
-            Retailers who blame organized theft for lower profits could be
-            overstating crime’s impact to cover up internal flaws or
-            self-inflicted problems, CNBC has learned. But behind closed doors,
-            retailers are facing other issues they can better control, including
-            theft by their own employees, that are contributing to losses,
-            according to two sources who advise major retailers.
-          </RetailersWhoBlame> */}
-          <ImgIcon alt="" src="/img@2x.png" />
-        </Div1>
-
-        {/* <Div2>
-          <RetailersSayOrganizedContainer>
-            <RetailersSayOrganized>
-              Locked cases aren’t the answer to retail theft
-            </RetailersSayOrganized>
-            <RetailersSayOrganized>and shoplifting</RetailersSayOrganized>
-          </RetailersSayOrganizedContainer>
-          <RetailersWhoBlame>
-            Inevitably, anything that adds friction to the buying process, i.e.,
-            making the customer experience more difficult or more effortful,
-            will reduce sales. The negative impact may be as high as 15 to 25%.
-            Some sales may be pushed to other channels, like curbside pickup or
-            home delivery. In the most optimistic case, these online sales still
-            accrue to Target If a customer always buys the same product, locked
-            cases are merely an inconvenience. If a customer wants to compare
-            brands, read labels, etc. locked cases are an insurmountable
-            barrier.
-          </RetailersWhoBlame>
-          <ImgIcon alt="" src="/img1@2x.png" />
-        </Div2> */}
-      </Div>
+      <Section2 />
 
       <Div3>
         <SaveYourTimeContainer>
           <SaveYourTimeContainer1>
-            <RetailersSayOrganized>Save Your Time,</RetailersSayOrganized>
-            <RetailersSayOrganized>
-              and Reduce Your Stress
-            </RetailersSayOrganized>
+            <MainText>Save Your Time,</MainText>
+            <MainText>and Reduce Your Stress</MainText>
           </SaveYourTimeContainer1>
         </SaveYourTimeContainer>
         <TheWorldsSimplest>
@@ -170,15 +110,15 @@ const MainPC: NextPage = () => {
         <Child />
         <CctvCamerasWithAllevierParent>
           <CctvCamerasWithContainer>
-            <RetailersSayOrganized>CCTV cameras</RetailersSayOrganized>
-            <RetailersSayOrganized>with Allevier</RetailersSayOrganized>
+            <MainText>CCTV cameras</MainText>
+            <MainText>with Allevier</MainText>
           </CctvCamerasWithContainer>
           <Div4>4</Div4>
         </CctvCamerasWithAllevierParent>
         <HoursToMonitorEveryWeekParent>
           <HoursToMonitorContainer>
-            <RetailersSayOrganized>Hours to monitor</RetailersSayOrganized>
-            <RetailersSayOrganized>every week</RetailersSayOrganized>
+            <MainText>Hours to monitor</MainText>
+            <MainText>every week</MainText>
           </HoursToMonitorContainer>
           <Div4>672</Div4>
         </HoursToMonitorEveryWeekParent>
@@ -194,10 +134,8 @@ const MainPC: NextPage = () => {
               </CctvCamerasParent>
               <HoursToMonitorEveryWeekGroup>
                 <HoursToMonitorContainer1>
-                  <RetailersSayOrganized>
-                    Hours to monitor
-                  </RetailersSayOrganized>
-                  <RetailersSayOrganized>every week</RetailersSayOrganized>
+                  <MainText>Hours to monitor</MainText>
+                  <MainText>every week</MainText>
                 </HoursToMonitorContainer1>
                 <Div6>672</Div6>
               </HoursToMonitorEveryWeekGroup>
@@ -219,8 +157,8 @@ const MainPC: NextPage = () => {
               </CctvCamerasGroup>
               <HourToMonitorEveryWeekParent>
                 <HourToMonitorContainer>
-                  <RetailersSayOrganized>Hour to monitor</RetailersSayOrganized>
-                  <RetailersSayOrganized>every week</RetailersSayOrganized>
+                  <MainText>Hour to monitor</MainText>
+                  <MainText>every week</MainText>
                 </HourToMonitorContainer>
                 <Div8>{`<1`}</Div8>
               </HourToMonitorEveryWeekParent>
@@ -300,12 +238,8 @@ const MainPC: NextPage = () => {
       </Div10>
       <Div11>
         <HowDoesItContainer>
-          <RetailersSayOrganized>
-            How does it work for you?
-          </RetailersSayOrganized>
-          <RetailersSayOrganized>
-            Read Others’ Success Stories:
-          </RetailersSayOrganized>
+          <MainText>How does it work for you?</MainText>
+          <MainText>Read Others’ Success Stories:</MainText>
         </HowDoesItContainer>
         <Review>
           <Review1>
@@ -373,12 +307,8 @@ const MainPC: NextPage = () => {
               <ReviewByParent1>
                 <ReviewBy>Review by</ReviewBy>
                 <BoutiqueOwnerIn>
-                  <RetailersSayOrganized>
-                    a Sports Equipment Store Owner
-                  </RetailersSayOrganized>
-                  <RetailersSayOrganized>
-                    in South Central LA
-                  </RetailersSayOrganized>
+                  <MainText>a Sports Equipment Store Owner</MainText>
+                  <MainText>in South Central LA</MainText>
                 </BoutiqueOwnerIn>
               </ReviewByParent1>
             </Div12>
@@ -429,12 +359,8 @@ const MainPC: NextPage = () => {
               <ReviewByParent1>
                 <ReviewBy>Review by</ReviewBy>
                 <BoutiqueOwnerIn>
-                  <RetailersSayOrganized>
-                    an Electronics Store Owner
-                  </RetailersSayOrganized>
-                  <RetailersSayOrganized>
-                    in Baldwin Village
-                  </RetailersSayOrganized>
+                  <MainText>an Electronics Store Owner</MainText>
+                  <MainText>in Baldwin Village</MainText>
                 </BoutiqueOwnerIn>
               </ReviewByParent1>
             </Div12>
@@ -468,12 +394,8 @@ const MainPC: NextPage = () => {
               <ReviewByParent1>
                 <ReviewBy>Review by</ReviewBy>
                 <BoutiqueOwnerIn>
-                  <RetailersSayOrganized>
-                    a Home Decor Store Owner
-                  </RetailersSayOrganized>
-                  <RetailersSayOrganized>
-                    in Huntington Park
-                  </RetailersSayOrganized>
+                  <MainText>a Home Decor Store Owner</MainText>
+                  <MainText>in Huntington Park</MainText>
                 </BoutiqueOwnerIn>
               </ReviewByParent1>
             </Div12>

@@ -106,66 +106,12 @@ export const ViewDemo = styled.div`
   height: 40px;
 `;
 
-export const RetailersSayOrganized = styled.p`
-  margin: 0;
-`;
-export const RetailersSayOrganizedContainer = styled.b`
-  position: absolute;
-  top: 280px;
-  left: 0px;
-  line-height: 30px;
-  display: inline-block;
-  width: 580px;
-`;
-export const RetailersWhoBlame = styled.div`
-  position: absolute;
-  top: 350px;
-  left: 0px;
-  font-size: 16px;
-  line-height: 26px;
-  color: #868686;
-  display: inline-block;
-  width: 580px;
-`;
-export const ImgIcon = styled.img`
-  width: 580px;
-  height: 250px;
-  object-fit: cover;
-`;
-export const Div1 = styled.div`
-  width: 580px;
-  height: 480px;
-`;
-
 export const Div2 = styled.div`
   position: absolute;
   top: 215px;
   left: 980px;
   width: 580px;
   height: 558px;
-`;
-export const Div = styled.div`
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  margin-top: 240px;
-  max-width: 1200px;
-  width: 100%;
-  font-size: 20px;
-`;
-
-export const Wrap = styled.div``;
-
-export const SpiralIcon = styled.img`
-  position: absolute;
-  left: 0px;
-  top: 0px;
-`;
-
-export const ProblemsWeSolve = styled.b`
-  z-index: 9999;
-  margin-left: 28px;
-  font-size: 48px;
 `;
 
 export const SaveYourTimeContainer1 = styled.span`
@@ -773,4 +719,12 @@ export const MainPcRoot = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: #000;
+`;
+
+export const MainText = styled.p`
+  line-height: 30px;
+  white-space: pre-line;
+  color: #fff;
+  font-weight: bold;
+  margin: 0;
 `;
