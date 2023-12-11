@@ -1,14 +1,6 @@
 import type { NextPage } from "next";
 import {
   MainPcRoot,
-  Div3,
-  SaveYourTimeContainer,
-  SaveYourTimeContainer1,
-  TheWorldsSimplest,
-  Child,
-  CctvCamerasWithAllevierParent,
-  CctvCamerasWithContainer,
-  Div4,
   HoursToMonitorEveryWeekParent,
   HoursToMonitorContainer,
   Group,
@@ -79,6 +71,7 @@ import {
 import Header from "./components/Header";
 import Section1 from "./components/Section1";
 import Section2 from "./components/Section2";
+import Section3 from "./components/Section3";
 
 const MainPC: NextPage = () => {
   return (
@@ -95,82 +88,10 @@ const MainPC: NextPage = () => {
       {/* Sections stuff */}
       <Section1 />
       <Section2 />
+      <Section3 />
 
-      <Div3>
-        <SaveYourTimeContainer>
-          <SaveYourTimeContainer1>
-            <MainText>Save Your Time,</MainText>
-            <MainText>and Reduce Your Stress</MainText>
-          </SaveYourTimeContainer1>
-        </SaveYourTimeContainer>
-        <TheWorldsSimplest>
-          The World’s Simplest Shoplifting Detection and Video Clipping AI
-          Solutions
-        </TheWorldsSimplest>
-        <Child />
-        <CctvCamerasWithAllevierParent>
-          <CctvCamerasWithContainer>
-            <MainText>CCTV cameras</MainText>
-            <MainText>with Allevier</MainText>
-          </CctvCamerasWithContainer>
-          <Div4>4</Div4>
-        </CctvCamerasWithAllevierParent>
-        <HoursToMonitorEveryWeekParent>
-          <HoursToMonitorContainer>
-            <MainText>Hours to monitor</MainText>
-            <MainText>every week</MainText>
-          </HoursToMonitorContainer>
-          <Div4>672</Div4>
-        </HoursToMonitorEveryWeekParent>
-        <Group>
-          <GroupChild />
-          <GroupItem />
-          <InTypicalCasesParent>
-            <InTypicalCases>in typical cases</InTypicalCases>
-            <GroupParent>
-              <CctvCamerasParent>
-                <CctvCameras1>CCTV cameras</CctvCameras1>
-                <Div6>4</Div6>
-              </CctvCamerasParent>
-              <HoursToMonitorEveryWeekGroup>
-                <HoursToMonitorContainer1>
-                  <MainText>Hours to monitor</MainText>
-                  <MainText>every week</MainText>
-                </HoursToMonitorContainer1>
-                <Div6>672</Div6>
-              </HoursToMonitorEveryWeekGroup>
-              <RectangleParent>
-                <GroupInner />
-                <RectangleDiv />
-              </RectangleParent>
-            </GroupParent>
-          </InTypicalCasesParent>
-          <GroupContainer>
-            <WithParent>
-              <With>with</With>
-              <LogoIcon1 alt="" src="/logo1.svg" />
-            </WithParent>
-            <GroupDiv>
-              <CctvCamerasGroup>
-                <CctvCameras2>CCTV cameras</CctvCameras2>
-                <Div8>∞</Div8>
-              </CctvCamerasGroup>
-              <HourToMonitorEveryWeekParent>
-                <HourToMonitorContainer>
-                  <MainText>Hour to monitor</MainText>
-                  <MainText>every week</MainText>
-                </HourToMonitorContainer>
-                <Div8>{`<1`}</Div8>
-              </HourToMonitorEveryWeekParent>
-              <RectangleGroup>
-                <GroupChild1 />
-                <GroupChild2 />
-              </RectangleGroup>
-            </GroupDiv>
-          </GroupContainer>
-        </Group>
-      </Div3>
-      <Div10>
+      {/* section4 */}
+      {/* <Div10>
         <OperationalEfficiency>
           <OperationalEfficiencyChild />
           <Icon alt="" src="/1-icon.svg" />
@@ -440,7 +361,7 @@ const MainPC: NextPage = () => {
           <TopChild />
           <Top1>Top ↑</Top1>
         </Top2>
-      </Div22>
+      </Div22> */}
     </MainPcRoot>
   );
 };

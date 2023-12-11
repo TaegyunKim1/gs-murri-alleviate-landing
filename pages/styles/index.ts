@@ -114,72 +114,7 @@ export const Div2 = styled.div`
   height: 558px;
 `;
 
-export const SaveYourTimeContainer1 = styled.span`
-  line-break: anywhere;
-  width: 100%;
-`;
-export const SaveYourTimeContainer = styled.b`
-  position: absolute;
-  top: 100px;
-  left: 360px;
-  font-size: 48px;
-  line-height: 55px;
-  display: flex;
-  text-align: left;
-  align-items: center;
-  width: 1200px;
-`;
-export const TheWorldsSimplest = styled.div`
-  position: absolute;
-  top: 220px;
-  left: 360px;
-  line-height: 28px;
-  font-weight: 300;
-  text-align: left;
-  display: inline-block;
-  width: 1200px;
-`;
-export const Child = styled.div`
-  position: absolute;
-  top: 219px;
-  left: 1634px;
-  border-radius: 50%;
-  background-color: rgba(51, 204, 153, 0.7);
-  filter: blur(1000px);
-  width: 435px;
-  height: 435px;
-`;
-export const CctvCamerasWithContainer = styled.b`
-  position: absolute;
-  top: 100px;
-  left: 0px;
-  line-height: 32px;
-  display: inline-block;
-  width: 250px;
-`;
-export const Div4 = styled.div`
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-size: 100px;
-  line-height: 100px;
-  font-weight: 800;
-  display: inline-block;
-  width: 250px;
-`;
-export const CctvCamerasWithAllevierParent = styled.div`
-  position: absolute;
-  top: 591px;
-  left: 592px;
-  width: 250px;
-  height: 164px;
-  display: none;
-  color: #33cc99;
-`;
 export const HoursToMonitorContainer = styled.b`
-  position: absolute;
-  top: 100px;
-  left: 0px;
   line-height: 32px;
   display: inline-block;
   width: 250px;
@@ -410,15 +345,7 @@ export const Group = styled.div`
   font-size: 20px;
   color: #a6a6a6;
 `;
-export const Div3 = styled.div`
-  position: absolute;
-  top: 1726px;
-  left: 0px;
-  width: 1920px;
-  height: 758px;
-  text-align: center;
-  font-size: 28px;
-`;
+
 export const OperationalEfficiencyChild = styled.div`
   position: absolute;
   top: 0px;
