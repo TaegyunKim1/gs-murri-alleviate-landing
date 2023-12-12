@@ -74,6 +74,7 @@ import Section2 from "./components/Section2";
 import Section3 from "./components/Section3";
 import Section4 from "./components/Section4";
 import Section5 from "./components/Section5";
+import Footer from "./components/Footer";
 
 const MainPC: NextPage = () => {
   return (
@@ -93,6 +94,7 @@ const MainPC: NextPage = () => {
       <Section3 />
       <Section4 />
       <Section5 />
+      <Footer />
 
       {/* <Div22>
         <LogoIcon2 alt="" src="/logo2.svg" />
