@@ -13,8 +13,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "baseUrl": "./src", // src 폴더를 baseUrl로 설정
+    "paths": {
+      "~/*": ["./*"],
+      "@/libs/*": ["src/libs/*"], // libs 경로 등록
+      "@/pages/*": ["src/pages/*"] // pages 경로 등록
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "src/**/*", "**/*.ts", "**/*.tsx", "src/libs"],
   "exclude": ["node_modules"]
 }

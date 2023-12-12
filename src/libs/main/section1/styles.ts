@@ -7,10 +7,10 @@ export const Banner = styled.div`
   height: 539px;
   display: flex;
 
-  @media ${(props) => props.theme.size.mobile} {
+  /* @media ${(props) => props?.theme.size.mobile} {
     flex-direction: column;
     margin-top: 80px;
-  }
+  } */
 `;
 
 export const Banner1 = styled.div`

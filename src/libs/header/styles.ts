@@ -8,9 +8,9 @@ export const Gnb = styled.div`
   justify-content: center;
   background-color: #000000;
 
-  @media ${(props) => props.theme.size.mobile} {
+  /* @media ${(props) => props?.theme.size.mobile} {
     height: 63px;
-  }
+  } */
 `;
 
 export const GnbWrapper = styled.div`
@@ -21,18 +21,18 @@ export const GnbWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  @media ${(props) => props.theme.size.mobile} {
+  /* @media ${(props) => props?.theme.size.mobile} {
     margin: 0px 15px 0px 15px;
-  }
+  } */
 `;
 
 export const LogoIcon = styled.img`
   cursor: pointer;
   height: 49px;
 
-  @media ${(props) => props.theme.size.mobile} {
+  /* @media ${(props) => props?.theme.size.mobile} {
     height: 33px;
-  }
+  } */
 `;
 
 export const GnbMenu = styled.div`
@@ -41,9 +41,9 @@ export const GnbMenu = styled.div`
   align-items: center;
   text-align: center;
 
-  @media ${(props) => props.theme.size.mobile} {
+  /* @media ${(props) => props?.theme.size.mobile} {
     display: none;
-  }
+  } */
 `;
 
 export const Problems = styled.div`
@@ -91,10 +91,10 @@ export const Contact1 = styled.div`
 `;
 
 export const MobileMenu = styled.img`
-  @media ${(props) => props.theme.size.mobile} {
+  /* @media ${(props) => props?.theme.size.mobile} {
     display: block;
     height: 18px;
-  }
+  } */
 
   display: none;
   cursor: pointer;
