@@ -64,7 +64,7 @@ function Section3() {
               <Inpinite src="/inpinite.svg" />
               <TextContent2>CCTV cameras</TextContent2>
             </LeftDetailContent>
-            <EuqalIcon src="/equal.svg" />
+            <EuqalIcon src="/white-equal.svg" />
             <RightDetailContent>
               <OneSign src="/one-sign.svg" />
               <TextContent2>{"Hour to monitor\nevery week"}</TextContent2>
