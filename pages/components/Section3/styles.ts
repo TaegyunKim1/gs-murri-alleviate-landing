@@ -6,9 +6,9 @@ export const Div3 = styled.div`
   background-color: "#fff";
   max-width: 1200px;
   width: 100%;
-  height: 758px;
   text-align: center;
   font-size: 28px;
+  margin-bottom: 215px;
 `;
 
 export const SaveYourTimeContainer = styled.b`
