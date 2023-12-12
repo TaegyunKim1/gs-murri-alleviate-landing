@@ -10,7 +10,7 @@ import {
   SpiralIcon,
   SubTextInSection2,
   Wrap,
-} from "./styles";
+} from "../../../libs/main/section2/styles";
 
 function Section2() {
   return (

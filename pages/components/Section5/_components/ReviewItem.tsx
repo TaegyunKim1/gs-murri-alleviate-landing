@@ -1,5 +1,11 @@
 import React from "react";
-import { ItemWrap, StarsIcon, Review, ReviewBy, Reviewer } from "./styles";
+import {
+  ItemWrap,
+  StarsIcon,
+  Review,
+  ReviewBy,
+  Reviewer,
+} from "../../../../libs/main/section5/_components/styles";
 
 function ReviewItem(props) {
   const { item } = props;
@@ -7,9 +13,9 @@ function ReviewItem(props) {
   return (
     <ItemWrap>
       <StarsIcon src="/review-star-group.svg" alt="" />
-      <Review>{item.content}</Review>
+      <Review>{item?.content}</Review>
       <ReviewBy>Review by</ReviewBy>
-      <Reviewer>{item.reviewer}</Reviewer>
+      <Reviewer>{item?.reviewer}</Reviewer>
     </ItemWrap>
   );
 }

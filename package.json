@@ -20,7 +20,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "npx next build",
+    "build": "npx next build && cp -r ./.next/* ./out",
     "start": "next start",
     "lint": "next lint"
   }

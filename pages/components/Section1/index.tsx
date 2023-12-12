@@ -13,7 +13,7 @@ import {
   AiBackgroundText,
   Circle,
   CircleItem,
-} from "./styles";
+} from "../../../libs/main/section1/styles";
 
 function Section1() {
   return (

@@ -9,9 +9,9 @@ import {
   Title,
   TitleContainer,
   Wrap,
-} from "./styles";
+} from "../../../libs/main/section5/styles";
 import ReviewItem from "./_components/ReviewItem";
-import { data } from "./data";
+import { data } from "../../../libs/main/section5/data";
 
 function Section5() {
   return (

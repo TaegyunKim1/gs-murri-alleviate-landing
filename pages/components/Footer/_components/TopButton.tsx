@@ -1,5 +1,8 @@
 import React from "react";
-import { ButtonContent, ButtonWrap } from "./styles";
+import {
+  ButtonContent,
+  ButtonWrap,
+} from "../../../../libs/footer/_components/styles";
 
 function TopButton() {
   return (

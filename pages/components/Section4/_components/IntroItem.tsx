@@ -1,5 +1,10 @@
 import React from "react";
-import { MainText, PointImage, Title, Wrap } from "./styles";
+import {
+  MainText,
+  PointImage,
+  Title,
+  Wrap,
+} from "../../../../libs/main/section4/_components/styles";
 
 type item = {
   id: number;
@@ -14,9 +19,9 @@ function IntroItem(props: object) {
   console.log(props);
   return (
     <Wrap>
-      <Title>{dataItem.title}</Title>
-      <MainText>{dataItem.mainText}</MainText>
-      <PointImage src={dataItem.img} alt="" />
+      <Title>{dataItem?.title}</Title>
+      <MainText>{dataItem?.mainText}</MainText>
+      <PointImage src={dataItem?.img} alt="" />
     </Wrap>
   );
 }

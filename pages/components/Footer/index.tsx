@@ -11,7 +11,7 @@ import {
   Rights,
   SmallDot,
   Wrap,
-} from "./styles";
+} from "../../../libs/footer/styles";
 import TopButton from "./_components/TopButton";
 
 function Footer() {

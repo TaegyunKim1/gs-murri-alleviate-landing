@@ -1,9 +1,9 @@
 import { Fragment } from "react";
 import Head from "next/head";
 import type { AppProps } from "next/app";
-import GlobalStyles from "./styles/global";
+import GlobalStyles from "../libs/styles/global";
 import { ThemeProvider } from "styled-components";
-import theme from "./styles/theme";
+import theme from "../libs/styles/theme";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

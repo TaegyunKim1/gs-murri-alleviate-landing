@@ -12,7 +12,7 @@ import {
   Problems,
   TryFreeTrialChild,
   WhyAllevier,
-} from "./styles";
+} from "../../../libs/header/styles";
 
 function Header() {
   {

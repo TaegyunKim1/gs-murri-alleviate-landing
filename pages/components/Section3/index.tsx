@@ -24,7 +24,7 @@ import {
   LeftDetailContent,
   RightDetailContent,
   OneSign,
-} from "./styles";
+} from "../../../libs/main/section3/styles";
 
 function Section3() {
   return (

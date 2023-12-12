@@ -1,7 +1,11 @@
 import React from "react";
 import IntroItem from "./_components/IntroItem";
-import { data } from "./data";
-import { BigSpiralIcon, Container, GridWrap } from "./styles";
+import { data } from "../../../libs/main/section4/data";
+import {
+  BigSpiralIcon,
+  Container,
+  GridWrap,
+} from "../../../libs/main/section4/styles";
 
 function Section4() {
   return (
