@@ -73,6 +73,7 @@ import Section1 from "./components/Section1";
 import Section2 from "./components/Section2";
 import Section3 from "./components/Section3";
 import Section4 from "./components/Section4";
+import Section5 from "./components/Section5";
 
 const MainPC: NextPage = () => {
   return (
@@ -91,10 +92,9 @@ const MainPC: NextPage = () => {
       <Section2 />
       <Section3 />
       <Section4 />
+      <Section5 />
 
-      {/* section4 */}
-
-      <Div22>
+      {/* <Div22>
         <LogoIcon2 alt="" src="/logo2.svg" />
         <PangyoRo256beonGilBundang>
           25, Pangyo-ro 256beon-gil, Bundang-gu, Seongnam-si, Gyeonggi-do,
@@ -113,7 +113,7 @@ const MainPC: NextPage = () => {
           <TopChild />
           <Top1>Top ↑</Top1>
         </Top2>
-      </Div22>
+      </Div22> */}
     </MainPcRoot>
   );
 };

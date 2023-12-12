@@ -5,6 +5,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
+  margin-bottom: 202px;
 `;
 
 export const GridWrap = styled.div`
@@ -24,5 +25,3 @@ export const BigSpiralIcon = styled.img`
   width: 764px;
   height: 763.892px;
 `;
-
-// big-spiral.svg

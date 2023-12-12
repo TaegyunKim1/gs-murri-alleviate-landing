@@ -73,7 +73,7 @@ export const Contact = styled.div`
   width: 122px;
   height: 40px;
   text-align: center;
-  color: #000000;
+  color: #141414;
 `;
 
 export const TryFreeTrialChild = styled.div`

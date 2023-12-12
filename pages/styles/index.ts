@@ -630,7 +630,7 @@ export const Div22 = styled.div`
   position: absolute;
   top: 4316px;
   left: 0px;
-  background-color: #000;
+  background-color: #141414;
   width: 1920px;
   height: 420px;
   font-size: 18px;
@@ -645,7 +645,7 @@ export const MainPcRoot = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #000;
+  background-color: #141414;
 `;
 
 export const MainText = styled.p`
