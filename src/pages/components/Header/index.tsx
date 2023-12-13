@@ -13,21 +13,42 @@ import {
   TryFreeTrialChild,
   WhyAllevier,
 } from "../../../libs/header/styles";
+import { useRouter } from "next/router";
+import { css } from "styled-components";
 
 function Header() {
-  {
-    /* 상단 메뉴바 */
-  }
+  const router = useRouter(); // useRouter로 현재 경로 가져오기
+
+  // 라우트 경로가 "how"이면 폰트 색상을 변경하는 스타일
+  const howRouteStyle = css`
+    color: ${router.pathname === "/How" ? "#33CC99" : "inherit"};
+  `;
+
+  const aboutUsRouteStyle = css`
+    color: ${router.pathname === "/AboutUs" ? "#33CC99" : "inherit"};
+  `;
+
   return (
     <Gnb>
       <GnbWrapper>
-        <LogoIcon alt="" src="/white-logo.svg" />
+        <LogoIcon
+          alt=""
+          src="/white-logo.svg"
+          onClick={() => router.push("/")}
+        />
         <GnbMenu>
           <Problems>Problems</Problems>
           <WhyAllevier>Why Allevier</WhyAllevier>
-          <HowItWorks>How it works</HowItWorks>
-          <AboutUs>About Us</AboutUs>
-          <Contact>
+          <HowItWorks onClick={() => router.push("/How")} css={howRouteStyle}>
+            How it works
+          </HowItWorks>
+          <AboutUs
+            onClick={() => router.push("/AboutUs")}
+            css={aboutUsRouteStyle}
+          >
+            About Us
+          </AboutUs>
+          <Contact onClick={() => router.push("/Contact")}>
             <TryFreeTrialChild>
               <Contact1>Contact</Contact1>
             </TryFreeTrialChild>

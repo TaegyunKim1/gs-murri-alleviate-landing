@@ -1,4 +1,5 @@
 import { Input } from "@chakra-ui/react";
+import router from "next/router";
 import React from "react";
 import {
   Container,
@@ -74,7 +75,7 @@ function Contact() {
           backgroundColor={"#F5F5F5"}
           mb={"50px"}
         />
-        <ButtonWrap>
+        <ButtonWrap onClick={() => router.push("/Complete")}>
           <ButtonContent>Submit</ButtonContent>
         </ButtonWrap>
       </Wrap>

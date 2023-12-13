@@ -14,6 +14,7 @@ import {
   Circle,
   CircleItem,
 } from "../../../libs/main/section1/styles";
+import router from "next/router";
 
 function Section1() {
   return (
@@ -28,7 +29,9 @@ function Section1() {
         </TrustYourPeople>
         <TryFreeTrial>
           <TryFreeTrialChild>
-            <TryFreeTrial1>Try free trial</TryFreeTrial1>
+            <TryFreeTrial1 onClick={() => router.push("/Contact")}>
+              Try free trial
+            </TryFreeTrial1>
           </TryFreeTrialChild>
         </TryFreeTrial>
       </Banner1>

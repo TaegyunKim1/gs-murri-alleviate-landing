@@ -1,3 +1,4 @@
+import router from "next/router";
 import React from "react";
 import {
   MainLeftSection,
@@ -20,7 +21,7 @@ function Section1() {
         </Row>
         <MainText>And how does</MainText>
         <MainText>it work?</MainText>
-        <ButtonWrap>
+        <ButtonWrap onClick={() => router.push("/Contact")}>
           <ButtonText>Try free trial</ButtonText>
         </ButtonWrap>
       </MainLeftSection>

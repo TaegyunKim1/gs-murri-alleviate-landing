@@ -14,6 +14,7 @@ export const Gnb = styled.div`
 `;
 
 export const GnbWrapper = styled.div`
+  font-family: Inter;
   width: 100%;
   height: 100%;
   max-width: 1200px;
@@ -46,28 +47,32 @@ export const GnbMenu = styled.div`
   } */
 `;
 
-export const Problems = styled.div`
+export const Problems = styled.p`
+  font-family: Inter;
   cursor: pointer;
   font-size: 18px;
   font-weight: 500;
 `;
 
-export const WhyAllevier = styled.div`
+export const WhyAllevier = styled.p`
+  font-family: Inter;
   cursor: pointer;
   font-weight: 500;
 `;
 
-export const HowItWorks = styled.div`
+export const HowItWorks = styled.p`
+  font-family: Inter;
   cursor: pointer;
   font-weight: 500;
 `;
 
-export const AboutUs = styled.div`
+export const AboutUs = styled.p`
   cursor: pointer;
   font-weight: 500;
 `;
 
-export const Contact = styled.div`
+export const Contact = styled.p`
+  font-family: Inter;
   margin-left: 8px;
   cursor: pointer;
   width: 122px;
@@ -85,7 +90,8 @@ export const TryFreeTrialChild = styled.div`
   align-items: center;
 `;
 
-export const Contact1 = styled.div`
+export const Contact1 = styled.p`
+  font-family: Inter;
   line-height: 16px;
   font-weight: 500;
 `;
