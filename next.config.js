@@ -8,6 +8,9 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   output: "static",
+  compiler: {
+    styledComponents: true,
+  },
 };
 
 module.exports = nextConfig;
