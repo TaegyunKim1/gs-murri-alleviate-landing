@@ -5,8 +5,15 @@ import {
 } from "../../../../libs/footer/_components/styles";
 
 function TopButton() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <ButtonWrap>
+    <ButtonWrap onClick={scrollToTop}>
       <ButtonContent>Top ↑</ButtonContent>
     </ButtonWrap>
   );

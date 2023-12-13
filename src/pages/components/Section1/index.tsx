@@ -34,9 +34,9 @@ function Section1() {
       </Banner1>
       <AnimationStuff>
         <AiBackgroundText alt="" src="/ai-text.svg" />
-        <Circle alt="" src="/circle.svg" />
+        <Circle alt="" src="/temporary.svg" />
         {/* circle-item1.svg */}
-        <CircleItem alt="" src="/circle-item1.svg" />
+        {/* <CircleItem alt="" src="/circle-item1.svg" /> */}
       </AnimationStuff>
     </Banner>
   );
