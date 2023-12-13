@@ -26,7 +26,6 @@ function Section2() {
           <MainText>
             {`Retailers say organized theft is biting into profits, \nbut internal issues may really be to blame`}
           </MainText>
-
           <SubTextInSection2>
             Retailers who blame organized theft for lower profits could be
             overstating crime’s impact to cover up internal flaws or
