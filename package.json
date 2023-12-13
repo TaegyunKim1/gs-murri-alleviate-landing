@@ -27,7 +27,8 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "npx next build && cp -r ./.next/* ./out",
+    "build": "npx next build",
+    "dev-deploy": "npx next build && npx firebase deploy",
     "start": "next start",
     "lint": "next lint"
   }
