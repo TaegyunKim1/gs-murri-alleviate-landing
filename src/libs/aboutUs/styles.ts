@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   background-color: #151515;
-  padding-bottom: 200px;
+  padding-bottom: 174px;
 `;
 
 export const Wrap = styled.div`
