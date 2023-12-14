@@ -3364,6 +3364,11 @@ scheduler@^0.23.0:
   dependencies:
     loose-envify "^1.1.0"
 
+seamless-scroll-polyfill@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.npmjs.org/seamless-scroll-polyfill/-/seamless-scroll-polyfill-2.3.4.tgz"
+  integrity sha512-Biobd4LDoeFODX1bfiru84GveSajzFELFB3ejMZsRR2TpD73W46uEZYAEqSx5RtKpN2umhGWaoSRivs0ZcHp9g==
+
 semver@^6.3.1:
   version "6.3.1"
   resolved "https://registry.npmjs.org/semver/-/semver-6.3.1.tgz"

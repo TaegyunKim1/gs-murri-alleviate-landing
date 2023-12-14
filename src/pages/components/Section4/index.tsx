@@ -9,7 +9,7 @@ import {
 
 function Section4() {
   return (
-    <Container>
+    <Container id="section4">
       <GridWrap>
         {data.map((dataItem: object) => {
           return <IntroItem dataItem={dataItem} />;

@@ -14,7 +14,7 @@ import {
 
 function Section2() {
   return (
-    <Div>
+    <Div id="section2">
       <Wrap>
         <SpiralIcon alt="" src="/small-spiral.svg" />
         <ProblemsWeSolve>Problems We Solve</ProblemsWeSolve>

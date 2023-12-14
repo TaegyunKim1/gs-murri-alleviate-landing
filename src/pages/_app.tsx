@@ -6,7 +6,7 @@ import { ThemeProvider } from "styled-components";
 import theme from "../libs/styles/theme";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraBaseProvider, ChakraProvider } from "@chakra-ui/react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -25,13 +25,13 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
       </Head>
       <GlobalStyles />
-      <ChakraProvider>
-        <ThemeProvider theme={theme}>
-          <Header />
-          <Component {...pageProps} />
-          <Footer />
-        </ThemeProvider>
-      </ChakraProvider>
+      {/* <ChakraBaseProvider> */}
+      <ThemeProvider theme={theme}>
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+      </ThemeProvider>
+      {/* </ChakraBaseProvider> */}
     </Fragment>
   );
 }
