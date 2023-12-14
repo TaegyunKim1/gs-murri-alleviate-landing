@@ -71,7 +71,7 @@ export const AboutUs = styled.p`
   font-weight: 500;
 `;
 
-export const Contact = styled.p`
+export const Contact = styled.div`
   font-family: Inter;
   margin-left: 8px;
   cursor: pointer;
