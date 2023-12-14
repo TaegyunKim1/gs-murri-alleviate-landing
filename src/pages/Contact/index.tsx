@@ -1,4 +1,12 @@
-import { Input } from "@chakra-ui/react";
+import { ChevronDownIcon } from "@chakra-ui/icons";
+import {
+  Button,
+  Input,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+} from "@chakra-ui/react";
 import router from "next/router";
 import React from "react";
 import {
@@ -54,27 +62,76 @@ function Contact() {
           backgroundColor={"#F5F5F5"}
           mb={"20px"}
         />
-        <Input
-          placeholder="Retail cateory"
-          maxW={"700px"}
-          height={"50px"}
-          backgroundColor={"#F5F5F5"}
-          mb={"20px"}
-        />
-        <Input
-          placeholder="Camera Network"
-          maxW={"700px"}
-          height={"50px"}
-          backgroundColor={"#F5F5F5"}
-          mb={"20px"}
-        />
-        <Input
-          placeholder="Number of employees"
-          maxW={"700px"}
-          height={"50px"}
-          backgroundColor={"#F5F5F5"}
-          mb={"50px"}
-        />
+        <Menu>
+          <MenuButton
+            as={Button}
+            width={"100%"}
+            maxW={"700px"}
+            height={"50px"}
+            backgroundColor={"#F5F5F5"}
+            mb={"20px"}
+            rightIcon={<ChevronDownIcon />}
+            textAlign={"start"}
+            color={"#718096"}
+            fontWeight={400}
+          >
+            Retail cateory
+          </MenuButton>
+          <MenuList>
+            <MenuItem>Download</MenuItem>
+            <MenuItem>Create a Copy</MenuItem>
+            <MenuItem>Mark as Draft</MenuItem>
+            <MenuItem>Delete</MenuItem>
+            <MenuItem>Attend a Workshop</MenuItem>
+          </MenuList>
+        </Menu>
+        <Menu>
+          <MenuButton
+            as={Button}
+            width={"100%"}
+            maxW={"700px"}
+            height={"50px"}
+            backgroundColor={"#F5F5F5"}
+            mb={"20px"}
+            rightIcon={<ChevronDownIcon />}
+            textAlign={"start"}
+            color={"#718096"}
+            fontWeight={400}
+          >
+            Camera Network
+          </MenuButton>
+          <MenuList>
+            <MenuItem>Download</MenuItem>
+            <MenuItem>Create a Copy</MenuItem>
+            <MenuItem>Mark as Draft</MenuItem>
+            <MenuItem>Delete</MenuItem>
+            <MenuItem>Attend a Workshop</MenuItem>
+          </MenuList>
+        </Menu>
+        <Menu>
+          <MenuButton
+            as={Button}
+            width={"100%"}
+            maxW={"700px"}
+            height={"50px"}
+            backgroundColor={"#F5F5F5"}
+            mb={"50px"}
+            rightIcon={<ChevronDownIcon />}
+            textAlign={"start"}
+            color={"#718096"}
+            fontWeight={400}
+          >
+            Number of employees
+          </MenuButton>
+          <MenuList>
+            <MenuItem>Download</MenuItem>
+            <MenuItem>Create a Copy</MenuItem>
+            <MenuItem>Mark as Draft</MenuItem>
+            <MenuItem>Delete</MenuItem>
+            <MenuItem>Attend a Workshop</MenuItem>
+          </MenuList>
+        </Menu>
+
         <ButtonWrap onClick={() => router.push("/Complete")}>
           <ButtonContent>Submit</ButtonContent>
         </ButtonWrap>
