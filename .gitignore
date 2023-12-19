@@ -34,5 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
+# firebase
 /.firebase
 .firebase
+
+# env
+.env.development
+.env.production

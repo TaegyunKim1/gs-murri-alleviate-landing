@@ -6,7 +6,6 @@ import { ThemeProvider } from "styled-components";
 import theme from "../libs/styles/theme";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     const handleRouteChange = () => {
@@ -35,7 +34,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         {/* ga4 sutff */}
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-9KE6YB6HNV"
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.DEV_GA4_ID}`}
         ></script>
         <script
           dangerouslySetInnerHTML={{
@@ -43,7 +42,7 @@ function MyApp({ Component, pageProps }: AppProps) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-9KE6YB6HNV');
+              gtag('config', ${process.env.DEV_GA4_ID});
             `,
           }}
         />
@@ -53,7 +52,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             __html: `
               (function(h,o,t,j,a,r){
                   h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-                  h._hjSettings={hjid:3799667,hjsv:6};
+                  h._hjSettings={hjid:${process.env.DEV_HOTJAR_HJID},hjsv:${process.env.DEV_HOTJAR_HJSV}};
                   a=o.getElementsByTagName('head')[0];
                   r=o.createElement('script');r.async=1;
                   r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
