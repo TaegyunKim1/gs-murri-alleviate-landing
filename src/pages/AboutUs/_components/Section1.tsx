@@ -1,3 +1,4 @@
+import router from "next/router";
 import React from "react";
 import {
   BigTitle,
@@ -8,6 +9,7 @@ import {
   OurTeam,
   Row,
 } from "~/libs/aboutUs/_components/styles";
+import { ButtonText, ButtonWrap } from "~/libs/aboutUs/styles";
 
 function Section1() {
   return (
@@ -19,6 +21,9 @@ function Section1() {
             {"Pioneering a Safer World\nwith Advanced AI"}
           </MiddleTitle>
         </LeftContentWrap>
+        <ButtonWrap onClick={() => router.push("/Contact")}>
+          <ButtonText>Try free trial</ButtonText>
+        </ButtonWrap>
 
         <OurTeam src="/our-team.svg" />
       </MainContainer>
