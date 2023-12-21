@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   ColWrap,
   Div,
   Div1,
+  Dot,
+  DotsWrap,
   MainText,
   ProblemsWeSolve,
   RetailersSayOrganizedContainer,
@@ -11,8 +13,41 @@ import {
   SubTextInSection2,
   Wrap,
 } from "../../../libs/main/section2/styles";
+import { size } from "~/libs/styles/theme";
 
 function Section2() {
+  const mobileSize = size.mobile_constant;
+
+  const [innerWidth, setInnerWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 0
+  );
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const resizeListener = () => {
+      setInnerWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", resizeListener);
+  });
+
+  useEffect(() => {
+    const init = () => {
+      if (innerWidth <= mobileSize) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    };
+
+    init();
+  }, [innerWidth]);
+
+  const [focusMobileDot, setFocusMobileDot] = useState<number>(1);
+
+  const handleFocusMobileDot = (focus: number) => {
+    setFocusMobileDot(focus);
+  };
+
   return (
     <Div id="section2">
       <Wrap>
@@ -20,11 +55,24 @@ function Section2() {
         <ProblemsWeSolve>Problems We Solve</ProblemsWeSolve>
       </Wrap>
 
+      <DotsWrap>
+        <Dot
+          onClick={() => handleFocusMobileDot(1)}
+          isFocus={focusMobileDot === 1}
+        />
+        <Dot
+          onClick={() => handleFocusMobileDot(2)}
+          isFocus={focusMobileDot === 2}
+        />
+      </DotsWrap>
+
       <Div1>
-        <ColWrap>
+        <ColWrap isFocus={focusMobileDot === 1}>
           <Section2Img alt="" src="/section2-img1.png" />
           <MainText>
-            {`Retailers say organized theft is biting into profits, \nbut internal issues may really be to blame`}
+            {isMobile
+              ? `Retailers say organized theft is biting into profits, but internal issues may really be to blame`
+              : `Retailers say organized theft is biting into profits, \nbut internal issues may really be to blame`}
           </MainText>
           <SubTextInSection2>
             Retailers who blame organized theft for lower profits could be
@@ -35,7 +83,7 @@ function Section2() {
             according to two sources who advise major retailers.
           </SubTextInSection2>
         </ColWrap>
-        <ColWrap>
+        <ColWrap isFocus={focusMobileDot === 2}>
           <Section2Img alt="" src="/section2-img2.png" />
           <RetailersSayOrganizedContainer>
             <MainText>

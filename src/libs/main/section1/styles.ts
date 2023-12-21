@@ -7,10 +7,12 @@ export const Banner = styled.div`
   height: 539px;
   display: flex;
 
-  /* @media ${(props) => props?.theme.size.mobile} {
+  @media ${(props) => props?.theme.size.mobile} {
     flex-direction: column;
     margin-top: 80px;
-  } */
+    row-gap: 123px;
+    height: 717px;
+  }
 `;
 
 export const Banner1 = styled.div`
@@ -24,6 +26,11 @@ export const Banner1 = styled.div`
 export const LogoIcon = styled.img`
   height: 100px;
   width: 308px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    height: 59px;
+    width: 180px;
+  }
 `;
 
 export const AllevierLossPrevention = styled.b`
@@ -31,6 +38,10 @@ export const AllevierLossPrevention = styled.b`
   margin-top: 15px;
   font-size: 70px;
   white-space: pre-line;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    font-size: 40px;
+  }
 `;
 
 export const TrustYourPeople = styled.div`
@@ -39,30 +50,47 @@ export const TrustYourPeople = styled.div`
   font-size: 18px;
   line-height: 18px;
   font-weight: 500;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    font-size: 16px;
+    width: 330px;
+    line-height: 20px;
+  }
+`;
+
+export const TryFreeTrial = styled.div`
+  margin-top: 70px;
+  width: 100%;
+  height: 68px;
+  text-align: center;
+  color: #151515;
+  cursor: pointer;
+  display: flex;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    justify-content: center;
+  }
 `;
 
 export const TryFreeTrialChild = styled.div`
+  width: 260px;
   height: 68px;
   border-radius: 10px;
   background-color: #33cc99;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    width: 330px;
+    height: 68px;
+  }
 `;
 
 export const TryFreeTrial1 = styled.div`
   line-height: 16px;
   font-weight: 500;
   font-size: 24px;
-`;
-
-export const TryFreeTrial = styled.div`
-  margin-top: 70px;
-  width: 260px;
-  height: 68px;
-  text-align: center;
-  color: #151515;
-  cursor: pointer;
 `;
 
 // 애니메이션
@@ -95,6 +123,10 @@ export const AnimationStuff = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    /* margin-top: 120px; */
+  }
 `;
 
 export const AiBackgroundText = styled.img`

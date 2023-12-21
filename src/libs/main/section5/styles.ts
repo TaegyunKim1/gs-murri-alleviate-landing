@@ -25,6 +25,12 @@ export const Title = styled.p`
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    font-size: 24px;
+    white-space: pre-line;
+    margin-left: 25px;
+  }
 `;
 
 export const SpiralIcon = styled.img`
@@ -32,12 +38,23 @@ export const SpiralIcon = styled.img`
   position: absolute;
   left: 0px;
   top: 0px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 export const ReviewWrap = styled.div`
+  width: 100%;
   display: flex;
   justify-content: center;
   column-gap: 40px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    justify-content: flex-start;
+    overflow-x: scroll;
+  }
 `;
 
 export const ButtonGroup = styled.div`
@@ -45,6 +62,10 @@ export const ButtonGroup = styled.div`
   display: flex;
   justify-content: center;
   column-gap: 40px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    display: none;
+  }
 `;
 
 export const Button = styled.img`
@@ -58,4 +79,11 @@ export const SwapSpiralIcon = styled.img`
   z-index: -1;
   right: 104px;
   top: 200px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    width: 190px;
+    height: 190px;
+    top: 350px;
+    right: -100px;
+  }
 `;

@@ -16,7 +16,6 @@ type item = {
 function IntroItem(props: object) {
   const { dataItem } = props;
 
-  console.log(props);
   return (
     <Wrap>
       <Title>{dataItem?.title}</Title>

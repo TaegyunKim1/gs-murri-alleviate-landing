@@ -9,10 +9,15 @@ export const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 40px 0px 40px;
+  padding: 20px 40px 0px 40px;
   box-sizing: border-box;
   position: relative;
   background-color: #141414;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    width: 100%;
+    align-items: flex-start;
+  }
 `;
 
 export const Title = styled.p`
@@ -22,6 +27,11 @@ export const Title = styled.p`
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
 `;
 
 export const MainText = styled.p`
@@ -30,7 +40,11 @@ export const MainText = styled.p`
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    margin: 0px;
+  }
 `;
 
 export const PointImage = styled.img`
@@ -39,4 +53,9 @@ export const PointImage = styled.img`
   position: absolute;
   bottom: 40px;
   right: 40px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    width: 50px;
+    height: 50px;
+  }
 `;

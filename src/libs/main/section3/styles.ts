@@ -9,21 +9,35 @@ export const Div3 = styled.div`
   text-align: center;
   font-size: 28px;
   margin-bottom: 215px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    margin-top: 103px;
+    margin-bottom: 100px;
+  }
 `;
 
 export const SaveYourTimeContainer = styled.b`
-  font-size: 48px;
   line-height: 55px;
   display: flex;
   text-align: left;
   align-items: center;
   width: 1200px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    width: 100%;
+    line-height: 28px;
+  }
 `;
 
 export const Wrap = styled.div`
   position: relative;
   width: 100%;
-  height: 55px;
+  height: 40px;
+  margin-bottom: 20px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    margin-bottom: 10px;
+  }
 `;
 
 export const SpiralIcon = styled.img`
@@ -31,14 +45,26 @@ export const SpiralIcon = styled.img`
   position: absolute;
   left: 0px;
   top: 0px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 export const SaveTime = styled.b`
   position: absolute;
   z-index: 2;
   margin-left: 28px;
+  margin-bottom: 20px;
   font-size: 48px;
   color: white;
+  font-size: 48px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    font-size: 24px;
+    margin-left: 14px;
+  }
 `;
 
 export const TheWorldsSimplest = styled.div`
@@ -51,6 +77,13 @@ export const TheWorldsSimplest = styled.div`
   display: inline-block;
   max-width: 1200px;
   width: 100%;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    font-size: 16px;
+    width: calc(100% - 40px);
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
 `;
 
 export const ContentWrap = styled.div`
@@ -62,6 +95,11 @@ export const ContentWrap = styled.div`
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    flex-direction: column;
+    row-gap: 40px;
+  }
 `;
 
 export const Content1 = styled.div`
@@ -70,12 +108,20 @@ export const Content1 = styled.div`
   justify-content: center;
   width: 435px;
   height: 237px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    width: 100%;
+  }
 `;
 
 export const TitleContent1 = styled.p`
   color: #777777;
   font-size: 20px;
   font-weight: 700;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    font-size: 16px;
+  }
 `;
 
 export const WrapDetailContent1 = styled.div`
@@ -94,6 +140,10 @@ export const CctvTitle = styled.p`
   font-size: 70px;
   font-weight: 800;
   margin: 0px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    font-size: 50px;
+  }
 `;
 
 export const CctvSubTitle = styled.p`
@@ -102,10 +152,20 @@ export const CctvSubTitle = styled.p`
   font-weight: 700;
   margin: 0px;
   white-space: pre-line;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    font-size: 12px;
+    white-space: pre;
+  }
 `;
 
 export const EuqalIcon = styled.img`
   margin: 0px 32px 0px 32px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    width: 33.559px;
+    height: 15.713px;
+  }
 `;
 
 export const Content2 = styled.div`
@@ -113,6 +173,10 @@ export const Content2 = styled.div`
   flex-direction: column;
   width: 590px;
   height: 237px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    width: 100%;
+  }
 `;
 
 export const WrapTitleContent2 = styled.div`
@@ -125,6 +189,10 @@ export const TitleContent2 = styled.p`
   color: #ffffff;
   font-size: 28px;
   font-weight: 700;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    font-size: 16px;
+  }
 `;
 
 export const LogoIcon = styled.img`
@@ -132,6 +200,11 @@ export const LogoIcon = styled.img`
   width: 132px;
   height: 43px;
   flex-shrink: 0;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    width: 73.831px;
+    height: 24.131px;
+  }
 `;
 
 export const WrapDetailContent2 = styled.div`
@@ -143,6 +216,10 @@ export const WrapDetailContent2 = styled.div`
 export const DetailContent2 = styled.div`
   display: flex;
   justify-content: center;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    align-items: center;
+  }
 `;
 
 export const LeftDetailContent = styled.div`
@@ -156,6 +233,11 @@ export const LeftDetailContent = styled.div`
 export const Inpinite = styled.img`
   width: 102px;
   height: 50px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    width: 57.112px;
+    height: 28.322px;
+  }
 `;
 
 export const TextContent2 = styled.p`
@@ -167,6 +249,11 @@ export const TextContent2 = styled.p`
   font-style: normal;
   font-weight: 700;
   white-space: pre-line;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    font-size: 16px;
+    white-space: pre;
+  }
 `;
 
 export const RightDetailContent = styled.div`
@@ -180,4 +267,10 @@ export const OneSign = styled.img`
   width: 109px;
   height: 80px;
   margin-bottom: 19px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    width: 60.941px;
+    height: 44.895px;
+    margin-bottom: 10px;
+  }
 `;

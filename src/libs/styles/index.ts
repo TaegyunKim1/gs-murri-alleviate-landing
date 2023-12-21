@@ -646,6 +646,13 @@ export const MainPcRoot = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: #141414;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
 `;
 
 export const MainText = styled.p`
