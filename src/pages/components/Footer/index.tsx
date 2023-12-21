@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Address,
   Container,
@@ -13,8 +13,40 @@ import {
   Wrap,
 } from "../../../libs/footer/styles";
 import TopButton from "./_components/TopButton";
+import { size } from "~/libs/styles/theme";
+import MobileFooter from "./_components/MobileFooter";
 
 function Footer() {
+  const mobileSize = size.mobile_constant;
+
+  const [innerWidth, setInnerWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 0
+  );
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const resizeListener = () => {
+      setInnerWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", resizeListener);
+  });
+
+  useEffect(() => {
+    const init = () => {
+      if (innerWidth <= mobileSize) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    };
+
+    init();
+  }, [innerWidth]);
+
+  if (isMobile) {
+    return <MobileFooter />;
+  }
+
   return (
     <Container>
       <Wrap>
