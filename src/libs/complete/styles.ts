@@ -6,6 +6,10 @@ export const Container = styled.div`
   justify-content: center;
   background-color: #151515;
   padding-bottom: 200px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    padding-bottom: 100px;
+  }
 `;
 
 export const Wrap = styled.div`
@@ -14,6 +18,10 @@ export const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    padding: 0px 15px;
+  }
 `;
 
 export const CompleteImg = styled.img`
@@ -31,8 +39,13 @@ export const Title = styled.p`
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
-  line-height: 50px; /* 125% */
+  line-height: 50px;
   margin-bottom: 18px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    text-align: left;
+    margin-bottom: 0px;
+  }
 `;
 
 export const Context1 = styled.p`
@@ -44,6 +57,15 @@ export const Context1 = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 30px; /* 150% */
+
+  @media ${(props) => props?.theme.size.mobile} {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 `;
 
 export const Context2 = styled.p`
@@ -55,4 +77,12 @@ export const Context2 = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 30px; /* 150% */
+
+  @media ${(props) => props?.theme.size.mobile} {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 0px;
+  }
 `;
