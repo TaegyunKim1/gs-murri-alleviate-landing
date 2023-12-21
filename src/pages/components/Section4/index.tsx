@@ -58,7 +58,6 @@ function Section4() {
     <Container id="section4">
       <GridWrap>
         {data.map((dataItem, index) => {
-          console.log(isMobile);
           if (isMobile && !isClickLoadMore && index >= 3) {
             return null; // 조건을 만족하지 않으면 렌더링을 하지 않음
           }
