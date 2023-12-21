@@ -4,6 +4,14 @@ export const MainSection = styled.div`
   margin-top: 134px;
   display: flex;
   justify-content: space-between;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    flex-direction: column;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    width: 100%;
+    row-gap: 50px;
+  }
 `;
 
 export const MainLeftSection = styled.div`
@@ -13,8 +21,11 @@ export const MainLeftSection = styled.div`
 
 export const Row = styled.div`
   display: flex;
-
   column-gap: 16px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    align-items: center;
+  }
 `;
 
 export const MainText = styled.p`
@@ -24,12 +35,21 @@ export const MainText = styled.p`
   font-size: 70px;
   font-style: normal;
   font-weight: 700;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    font-size: 40px;
+  }
 `;
 
 export const LogoIcon = styled.img`
   margin-top: 14px;
   width: 228px;
   height: 74px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    width: 140px;
+    height: 45.439px;
+  }
 `;
 
 export const ButtonWrap = styled.div`
@@ -42,6 +62,11 @@ export const ButtonWrap = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    margin-top: 45px;
+    width: 100%;
+  }
 `;
 
 export const ButtonText = styled.div`
@@ -55,10 +80,19 @@ export const CCTV = styled.img`
   margin-right: 30px;
   width: 474.999px;
   height: 410.96px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    width: 100%;
+    height: 285.537px;
+  }
 `;
 
 export const DetailSection = styled.div`
   margin-top: 297px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    margin-top: 100px;
+  }
 `;
 
 export const DetailTitleContainer = styled.div`
@@ -74,8 +108,16 @@ export const DetailTitle = styled.p`
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 52px;
   white-space: pre-line;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+  }
 `;
 
 export const SpiralIcon = styled.img`
@@ -83,6 +125,13 @@ export const SpiralIcon = styled.img`
   left: 0px;
   top: -14px;
   z-index: 0;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    width: 40px;
+    height: 40px;
+    top: -7px;
+    left: 10px;
+  }
 `;
 
 export const DetailContext = styled.p`
@@ -96,4 +145,8 @@ export const DetailContext = styled.p`
 
 export const Margin = styled.div`
   margin-top: 222px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    margin-top: 222px;
+  }
 `;

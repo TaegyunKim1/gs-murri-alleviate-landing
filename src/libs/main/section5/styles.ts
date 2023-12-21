@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin-bottom: 200px;
+  padding-bottom: 200px;
   z-index: 1;
   width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 `;
 
 export const Wrap = styled.div`

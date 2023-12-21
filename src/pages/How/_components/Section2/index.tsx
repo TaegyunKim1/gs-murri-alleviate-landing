@@ -13,7 +13,7 @@ function Section2() {
     <DetailSection>
       <DetailTitleContainer>
         <SpiralIcon alt="" src="/small-spiral.svg" />
-        <DetailTitle>{`Video analytics AI for retailers,\n
+        <DetailTitle>{`Video analytics AI for retailers,
         Building trust`}</DetailTitle>
         <DetailContext>
           We have created a new AI solution, Allevier, for small and medium

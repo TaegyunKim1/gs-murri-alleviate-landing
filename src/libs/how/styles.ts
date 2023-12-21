@@ -6,6 +6,10 @@ export const Container = styled.div`
   justify-content: center;
   background-color: #151515;
   padding-bottom: 200px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    padding-bottom: 59px;
+  }
 `;
 
 export const Wrap = styled.div`
