@@ -6,6 +6,10 @@ export const Container = styled.div`
   justify-content: center;
   background-color: #151515;
   padding-bottom: 200px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    padding-bottom: 100px;
+  }
 `;
 
 export const Wrap = styled.div`
@@ -14,6 +18,11 @@ export const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0px 15px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    align-items: flex-start;
+  }
 `;
 
 export const BigTitle = styled.p`
@@ -24,11 +33,16 @@ export const BigTitle = styled.p`
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
-  line-height: 60px; /* 120% */
+  line-height: 60px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    font-size: 40px;
+    text-align: left;
+    line-height: 50px;
+  }
 `;
 
 export const MiddleTitle = styled.p`
-  margin: 0px;
   color: #33cc99;
   text-align: center;
   font-family: Inter;
@@ -37,6 +51,13 @@ export const MiddleTitle = styled.p`
   font-weight: 600;
   margin: 50px 0px 10px 0px;
   white-space: pre-line;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    margin: 40px 0px 40px 0px;
+  }
 `;
 
 export const SubTitle = styled.p`
@@ -48,6 +69,14 @@ export const SubTitle = styled.p`
   font-style: normal;
   font-weight: 300;
   white-space: pre-line;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
 `;
 
 export const Context = styled.p`
@@ -58,6 +87,13 @@ export const Context = styled.p`
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    text-align: left;
+    color: #a6a6a6;
+    font-size: 14px;
+    margin: 0px 0px 103px 0px;
+  }
 `;
 
 export const ButtonWrap = styled.div`
@@ -69,6 +105,10 @@ export const ButtonWrap = styled.div`
   cursor: pointer;
   background-color: #33cc99;
   border-radius: 5px;
+
+  @media ${(props) => props?.theme.size.mobile} {
+    width: 100%;
+  }
 `;
 
 export const ButtonContent = styled.p`
