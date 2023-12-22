@@ -20,7 +20,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Fragment>
       <Head>
-        <title>locofy-react-nextjs-project</title>
+        <title>Allevier</title>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
