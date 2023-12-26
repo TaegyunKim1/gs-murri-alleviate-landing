@@ -20,6 +20,7 @@ export const TitleContainer = styled.div`
 `;
 
 export const Title = styled.p`
+  font-family: Inter;
   z-index: 1;
   margin: 0px 0px 63px 30px;
   color: #ffffff;

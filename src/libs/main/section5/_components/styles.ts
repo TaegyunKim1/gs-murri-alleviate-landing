@@ -8,7 +8,7 @@ export const ItemWrap = styled.div`
   flex-direction: column;
 
   @media ${(props) => props?.theme.size.mobile} {
-    width: 360px;
+    width: 420px;
     padding-right: 15px;
   }
 `;
@@ -19,6 +19,7 @@ export const StarsIcon = styled.img`
 `;
 
 export const Review = styled.p`
+  font-family: Inter;
   width: 315px;
   color: #d9d9d9;
   font-size: 14px;
@@ -36,6 +37,7 @@ export const Review = styled.p`
 `;
 
 export const ReviewBy = styled.p`
+  font-family: Inter;
   margin-top: 20px;
   margin-bottom: 0px;
   color: #33cc99;

@@ -115,6 +115,7 @@ export const Content1 = styled.div`
 `;
 
 export const TitleContent1 = styled.p`
+  font-family: Inter;
   color: #777777;
   font-size: 20px;
   font-weight: 700;
@@ -137,6 +138,7 @@ export const CctvWrap = styled.div`
 `;
 
 export const CctvTitle = styled.p`
+  font-family: Inter;
   color: #777777;
   font-size: 70px;
   font-weight: 800;
@@ -148,6 +150,7 @@ export const CctvTitle = styled.p`
 `;
 
 export const CctvSubTitle = styled.p`
+  font-family: Inter;
   color: #777777;
   font-size: 16px;
   font-weight: 700;
@@ -187,6 +190,7 @@ export const WrapTitleContent2 = styled.div`
 `;
 
 export const TitleContent2 = styled.p`
+  font-family: Inter;
   color: #ffffff;
   font-size: 28px;
   font-weight: 700;

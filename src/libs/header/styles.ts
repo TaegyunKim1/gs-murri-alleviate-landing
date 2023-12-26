@@ -67,6 +67,7 @@ export const HowItWorks = styled.p`
 `;
 
 export const AboutUs = styled.p`
+  font-family: Inter;
   cursor: pointer;
   font-weight: 500;
 `;
@@ -99,7 +100,7 @@ export const Contact1 = styled.p`
 export const MobileMenu = styled.img`
   @media ${(props) => props?.theme.size.mobile} {
     display: block;
-    height: 18px;
+    height: ${(props) => props?.height};
   }
 
   display: none;

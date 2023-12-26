@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   AboutUs,
   Contact,
@@ -19,7 +19,17 @@ import { css } from "styled-components";
 import { elementScrollIntoView } from "seamless-scroll-polyfill";
 
 function Header() {
+  const [isMobileNavi, setIsMobileNavi] = useState(false);
+
   const router = useRouter(); // useRouter로 현재 경로 가져오기
+
+  useEffect(() => {
+    if (router.pathname === "/MobileNavi") {
+      setIsMobileNavi(true);
+    } else {
+      setIsMobileNavi(false);
+    }
+  }, [isMobileNavi, router]);
 
   const howRouteStyle = css`
     color: ${router.pathname === "/How" ? "#33CC99" : "inherit"};
@@ -89,7 +99,19 @@ function Header() {
             </TryFreeTrialChild>
           </Contact>
         </GnbMenu>
-        <MobileMenu src="/hamburger-menu.svg" />
+        {isMobileNavi ? (
+          <MobileMenu
+            height={"36px"}
+            src="/mobile-close-btn.svg"
+            onClick={() => router.back()}
+          />
+        ) : (
+          <MobileMenu
+            src="/hamburger-menu.svg"
+            height={"18px"}
+            onClick={() => router.push("/MobileNavi")}
+          />
+        )}
       </GnbWrapper>
     </Gnb>
   );

@@ -656,6 +656,7 @@ export const MainPcRoot = styled.div`
 `;
 
 export const MainText = styled.p`
+  font-family: Inter;
   line-height: 30px;
   white-space: pre-line;
   color: #fff;

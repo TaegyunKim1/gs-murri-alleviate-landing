@@ -29,6 +29,7 @@ export const LeftContentWrap = styled.div`
 `;
 
 export const BigTitle = styled.p`
+  font-family: Inter;
   margin: 0px;
   color: #fff;
   font-size: 70px;
@@ -41,6 +42,7 @@ export const BigTitle = styled.p`
 `;
 
 export const MiddleTitle = styled.p`
+  font-family: Inter;
   margin-top: 4px;
   white-space: pre-line;
   margin: 0px;
@@ -110,6 +112,7 @@ export const SpiralIcon = styled.img`
 `;
 
 export const Title = styled.b`
+  font-family: Inter;
   position: absolute;
   z-index: 2;
   margin-left: 28px;
@@ -126,6 +129,7 @@ export const Title = styled.b`
 `;
 
 export const Context = styled.p`
+  font-family: Inter;
   margin: 0px;
   color: #d9d9d9;
   font-size: 16px;
@@ -152,6 +156,7 @@ export const DetailContextWrap = styled.div`
 `;
 
 export const DetailContextTitle = styled.p`
+  font-family: Inter;
   margin: 0px;
   color: #fff;
   font-size: 28px;
@@ -174,6 +179,7 @@ export const Margin = styled.div`
 `;
 
 export const DetailContext = styled.p`
+  font-family: Inter;
   margin: 0px;
   white-space: pre-line;
   color: #d9d9d9;

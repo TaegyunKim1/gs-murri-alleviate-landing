@@ -96,6 +96,7 @@ export const Section2Img = styled.img`
 `;
 
 export const MainText = styled.p`
+  font-family: Inter;
   line-height: 30px;
   white-space: pre-line;
   color: #fff;

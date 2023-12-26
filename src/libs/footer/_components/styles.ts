@@ -13,6 +13,7 @@ export const ButtonWrap = styled.div`
 `;
 
 export const ButtonContent = styled.p`
+  font-family: Inter;
   margin: 0px;
   color: #141414;
   text-align: center;

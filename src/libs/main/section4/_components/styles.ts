@@ -21,6 +21,7 @@ export const Wrap = styled.div`
 `;
 
 export const Title = styled.p`
+  font-family: Inter;
   z-index: 2;
   color: #33cc99;
   font-size: 24px;

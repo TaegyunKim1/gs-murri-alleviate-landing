@@ -31,6 +31,7 @@ export const LogoIcon = styled.img`
 `;
 
 export const Eamil = styled.p`
+  font-family: Inter;
   margin: 33px 0px 5px 0px;
   color: #fff;
   font-size: 18px;
@@ -40,6 +41,7 @@ export const Eamil = styled.p`
 `;
 
 export const Address = styled.p`
+  font-family: Inter;
   color: #a6a6a6;
   font-size: 18px;
   font-style: normal;
@@ -52,6 +54,7 @@ export const Address = styled.p`
 `;
 
 export const Rights = styled.p`
+  font-family: Inter;
   color: #fff;
   font-size: 18px;
   font-style: normal;
@@ -83,6 +86,7 @@ export const FooterEtcContent = styled.div`
 `;
 
 export const EtcContent = styled.p`
+  font-family: Inter;
   margin: 0px;
   color: #fff;
   font-size: 18px;

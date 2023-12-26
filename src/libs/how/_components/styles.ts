@@ -135,6 +135,7 @@ export const SpiralIcon = styled.img`
 `;
 
 export const DetailContext = styled.p`
+  font-family: Inter;
   margin-left: 30px;
   color: #d9d9d9;
   font-size: 16px;

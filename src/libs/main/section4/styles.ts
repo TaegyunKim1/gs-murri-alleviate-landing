@@ -84,6 +84,7 @@ export const LoadMoreWrap = styled.div`
 `;
 
 export const LoadMore = styled.p`
+  font-family: Inter;
   color: #3c9;
 `;
 
