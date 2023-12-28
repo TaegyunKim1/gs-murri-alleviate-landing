@@ -8,7 +8,7 @@ export const ItemWrap = styled.div`
   flex-direction: column;
 
   @media ${(props) => props?.theme.size.mobile} {
-    width: 420px;
+    width: 430px;
     padding-right: 15px;
   }
 `;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Row = styled.div`
+  overflow: hidden;
   margin-top: 127px;
   display: flex;
   flex-direction: column;

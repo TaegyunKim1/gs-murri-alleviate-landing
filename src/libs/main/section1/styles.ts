@@ -87,7 +87,8 @@ export const TryFreeTrialChild = styled.div`
   }
 `;
 
-export const TryFreeTrial1 = styled.div`
+export const TryFreeTrial1 = styled.p`
+  font-family: Inter;
   line-height: 16px;
   font-weight: 500;
   font-size: 24px;
