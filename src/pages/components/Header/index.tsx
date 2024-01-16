@@ -24,7 +24,7 @@ function Header() {
   const router = useRouter(); // useRouter로 현재 경로 가져오기
 
   useEffect(() => {
-    if (router.pathname === "/MobileNavi") {
+    if (router.pathname === "/mobilenavi") {
       setIsMobileNavi(true);
     } else {
       setIsMobileNavi(false);
@@ -32,11 +32,11 @@ function Header() {
   }, [isMobileNavi, router]);
 
   const howRouteStyle = css`
-    color: ${router.pathname === "/How" ? "#33CC99" : "inherit"};
+    color: ${router.pathname === "/how" ? "#33CC99" : "inherit"};
   `;
 
   const aboutUsRouteStyle = css`
-    color: ${router.pathname === "/AboutUs" ? "#33CC99" : "inherit"};
+    color: ${router.pathname === "/aboutus" ? "#33CC99" : "inherit"};
   `;
 
   const handleMoveTargetElement = (id: string) => {
@@ -84,16 +84,16 @@ function Header() {
           <WhyAllevier onClick={() => handleMenuClick("section4")}>
             Why Allevier
           </WhyAllevier>
-          <HowItWorks onClick={() => router.push("/How")} css={howRouteStyle}>
+          <HowItWorks onClick={() => router.push("/how")} css={howRouteStyle}>
             How it works
           </HowItWorks>
           <AboutUs
-            onClick={() => router.push("/AboutUs")}
+            onClick={() => router.push("/aboutus")}
             css={aboutUsRouteStyle}
           >
             About Us
           </AboutUs>
-          <Contact onClick={() => router.push("/Contact")}>
+          <Contact onClick={() => router.push("/contact")}>
             <TryFreeTrialChild>
               <Contact1>Contact</Contact1>
             </TryFreeTrialChild>
@@ -109,7 +109,7 @@ function Header() {
           <MobileMenu
             src="/hamburger-menu.svg"
             height={"18px"}
-            onClick={() => router.push("/MobileNavi")}
+            onClick={() => router.push("/mobilenavi")}
           />
         )}
       </GnbWrapper>

@@ -29,7 +29,7 @@ function Section1() {
         </TrustYourPeople>
         <TryFreeTrial>
           <TryFreeTrialChild>
-            <TryFreeTrial1 onClick={() => router.push("/Contact")}>
+            <TryFreeTrial1 onClick={() => router.push("/contact")}>
               Try free trial
             </TryFreeTrial1>
           </TryFreeTrialChild>
@@ -38,8 +38,6 @@ function Section1() {
       <AnimationStuff>
         <AiBackgroundText alt="" src="/ai-text.svg" />
         <Circle alt="" src="/temporary.svg" />
-        {/* circle-item1.svg */}
-        {/* <CircleItem alt="" src="/circle-item1.svg" /> */}
       </AnimationStuff>
     </Banner>
   );

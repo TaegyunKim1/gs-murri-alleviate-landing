@@ -17,7 +17,7 @@ export const data = [
     id: 3,
     title: "Improved Security",
     mainText:
-      '{"Empower your store"s security with Allevier AI, strengthening trust and reliability among your employees. Detecting cash and suspicious behavior, Allevier AI eliminates unfounded suspicions, contributing to a fortified and secure store environment.}',
+      "Empower your store security with Allevier AI, strengthening trust and reliability among your employees. Detecting cash and suspicious behavior, Allevier AI eliminates unfounded suspicions, contributing to a fortified and secure store environment.",
     img: "/section4-3.svg",
   },
   {
