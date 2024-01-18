@@ -44,8 +44,38 @@ function Section2() {
 
   const [focusMobileDot, setFocusMobileDot] = useState<number>(1);
 
+  const [touchStartX, setTouchStartX] = useState(0);
+  const [touchEndX, setTouchEndX] = useState(0);
+
   const handleFocusMobileDot = (focus: number) => {
     setFocusMobileDot(focus);
+  };
+
+  const handleTouchStart = (e) => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+
+  useEffect(() => {
+    // handleTouchEnd 내의 코드를 이곳으로 이동
+    const swipeDistance = touchStartX - touchEndX;
+
+    if (swipeDistance > 50) {
+      // Swipe to the left
+      setFocusMobileDot(2);
+
+      setTouchStartX(0);
+      setTouchEndX(0);
+    } else if (swipeDistance < -50) {
+      // Swipe to the right
+      setFocusMobileDot(1);
+
+      setTouchStartX(0);
+      setTouchEndX(0);
+    }
+  }, [touchEndX]);
+
+  const handleTouchEnd = (e) => {
+    setTouchEndX(e.changedTouches[0].clientX);
   };
 
   return (
@@ -66,7 +96,7 @@ function Section2() {
         />
       </DotsWrap>
 
-      <Div1>
+      <Div1 onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
         <ColWrap isFocus={focusMobileDot === 1}>
           <Section2Img alt="" src="/section2-img1.png" />
           <MainText>

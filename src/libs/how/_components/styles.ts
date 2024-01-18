@@ -69,7 +69,8 @@ export const ButtonWrap = styled.div`
   }
 `;
 
-export const ButtonText = styled.div`
+export const ButtonText = styled.p`
+  font-family: Inter;
   color: #151515;
   font-size: 24px;
   font-style: normal;
