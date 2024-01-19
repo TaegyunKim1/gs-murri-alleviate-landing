@@ -22,6 +22,25 @@ function Section5() {
 
   const [isMobile, setIsMobile] = useState(innerWidth <= mobileSize);
 
+  const [currentPage, setCurrentPage] = useState(0);
+  const [transformX, setTransformX] = useState(0);
+
+  const handleCarousel = (type: string) => {
+    if (type === "next" && currentPage >= 3) {
+      return;
+    }
+
+    if (type !== "next" && currentPage <= 0) {
+      return;
+    }
+
+    if (type === "next") {
+      setCurrentPage(currentPage + 1);
+    } else {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
   useEffect(() => {
     const resizeListener = () => {
       const newInnerWidth = window.innerWidth;
@@ -56,6 +75,15 @@ function Section5() {
     init();
   }, [innerWidth, mobileSize]);
 
+  // 케러셸 구현
+  useEffect(() => {
+    if (currentPage === 3) {
+      setTransformX(3680);
+    } else {
+      setTransformX(currentPage * 1200);
+    }
+  }, [currentPage]);
+
   return (
     <Container>
       <Wrap>
@@ -67,14 +95,26 @@ function Section5() {
               : "Read Others’ Success Stories"}
           </Title>
         </TitleContainer>
-        <ReviewWrap>
+        <ReviewWrap transformX={transformX}>
           {data.map((item) => {
             return <ReviewItem item={item} />;
           })}
         </ReviewWrap>
         <ButtonGroup>
-          <Button src="/left-button.svg" alt="" />
-          <Button src="/right-button.svg" alt="" />
+          <Button
+            src="/left-button.svg"
+            alt=""
+            onClick={() => {
+              handleCarousel("previous");
+            }}
+          />
+          <Button
+            src="/right-button.svg"
+            alt=""
+            onClick={() => {
+              handleCarousel("next");
+            }}
+          />
         </ButtonGroup>
       </Wrap>
       <SwapSpiralIcon src="/swap-spiral.svg" alt="" />

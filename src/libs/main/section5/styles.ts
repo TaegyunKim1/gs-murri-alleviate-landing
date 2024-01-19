@@ -13,6 +13,7 @@ export const Container = styled.div`
 export const Wrap = styled.div`
   width: 100%;
   max-width: 1200px;
+  overflow: hidden;
 `;
 
 export const TitleContainer = styled.div`
@@ -48,12 +49,17 @@ export const SpiralIcon = styled.img`
 `;
 
 export const ReviewWrap = styled.div`
-  width: 100%;
+  width: 3750px;
   display: flex;
-  justify-content: center;
   column-gap: 40px;
+  transition: transform 1s;
+  transform: ${(props) =>
+    props.transformX
+      ? `translateX(-${props.transformX}px)}`
+      : "translateX(0px)"};
 
   @media ${(props) => props?.theme.size.mobile} {
+    width: 100%;
     justify-content: flex-start;
     overflow-x: scroll;
   }

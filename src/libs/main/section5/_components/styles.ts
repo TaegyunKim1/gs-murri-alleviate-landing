@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ItemWrap = styled.div`
-  width: 373px;
+  min-width: 373px;
   height: 354px;
   border-right: 2px solid #33cc99;
   display: flex;

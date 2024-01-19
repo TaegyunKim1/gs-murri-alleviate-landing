@@ -16,13 +16,21 @@ import {
 import { size } from "~/libs/styles/theme";
 
 function Section2() {
+  // constants
   const mobileSize = size.mobile_constant;
 
+  // useStates
   const [innerWidth, setInnerWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 0
   );
   const [isMobile, setIsMobile] = useState(false);
 
+  const [focusMobileDot, setFocusMobileDot] = useState<number>(1);
+
+  const [touchStartX, setTouchStartX] = useState(0);
+  const [touchEndX, setTouchEndX] = useState(0);
+
+  // useEffects
   useEffect(() => {
     const resizeListener = () => {
       setInnerWidth(window.innerWidth);
@@ -42,19 +50,6 @@ function Section2() {
     init();
   }, [innerWidth]);
 
-  const [focusMobileDot, setFocusMobileDot] = useState<number>(1);
-
-  const [touchStartX, setTouchStartX] = useState(0);
-  const [touchEndX, setTouchEndX] = useState(0);
-
-  const handleFocusMobileDot = (focus: number) => {
-    setFocusMobileDot(focus);
-  };
-
-  const handleTouchStart = (e) => {
-    setTouchStartX(e.touches[0].clientX);
-  };
-
   useEffect(() => {
     // handleTouchEnd 내의 코드를 이곳으로 이동
     const swipeDistance = touchStartX - touchEndX;
@@ -73,6 +68,15 @@ function Section2() {
       setTouchEndX(0);
     }
   }, [touchEndX]);
+
+  // functions
+  const handleFocusMobileDot = (focus: number) => {
+    setFocusMobileDot(focus);
+  };
+
+  const handleTouchStart = (e) => {
+    setTouchStartX(e.touches[0].clientX);
+  };
 
   const handleTouchEnd = (e) => {
     setTouchEndX(e.changedTouches[0].clientX);
